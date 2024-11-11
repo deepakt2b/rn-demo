@@ -1,7 +1,7 @@
-import React from 'react'
-import {StyleSheet, Text, View} from 'react-native'
-
-import {SafeAreaView} from 'react-native-safe-area-context'
+// MyS3Component.js (CommonJS version)
+const React = require('react');
+const { StyleSheet, Text, View } = require('react-native');
+const { SafeAreaView } = require('react-native-safe-area-context');
 
 const MyS3Component = () => {
   return (
@@ -10,10 +10,10 @@ const MyS3Component = () => {
         <Text style={styles.textStyle}>Hello MyS3Component</Text>
       </View>
     </SafeAreaView>
-  )
-}
+  );
+};
 
-export default MyS3Component
+module.exports = MyS3Component;
 
 const styles = StyleSheet.create({
   container: {
@@ -24,5 +24,4 @@ const styles = StyleSheet.create({
     marginVertical: 8,
     textAlign: 'center',
   },
-})
-
+});
